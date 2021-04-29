@@ -5,7 +5,14 @@
 
 //Test Driven Ranges
 
+//passing test
 TEST_CASE("Case for detecting number of continuous range in the reading array given") {
   int ChargingCurrentReadings[] = {3, 3, 5, 4, 10, 11, 12};
   int numOfCCReadings = sizeof(ChargingCurrentReadings) / sizeof(ChargingCurrentReadings[0]);
   REQUIRE(NumberofContinuousRange(ChargingCurrentReadings, numOfCCReadings) == 2);
+  
+  //Failing test
+  TEST_CASE("Case for detecting number of continuous range in the reading array given") {
+  int ChargingCurrentReadings[] = {3, 3, 5, 4, 10, 11, 12};
+  int numOfCCReadings = sizeof(ChargingCurrentReadings) / sizeof(ChargingCurrentReadings[0]);
+  REQUIRE(NumberofContinuousRange(ChargingCurrentReadings, numOfCCReadings) == 3);
