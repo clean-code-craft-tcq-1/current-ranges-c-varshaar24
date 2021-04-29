@@ -1,4 +1,4 @@
-name: Check Completeness
+name: Build and Run
 
 on: [push, pull_request]
 
@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
-    - name: all entries made
-      run: bash ./.github/workflows/check-complete.sh
+    - name: build
+      run: g++ -Wall -Wextra -o TestRangeCalculator *.c*
+      
+    - name: run
+      run: ./TestRangeCalculator
