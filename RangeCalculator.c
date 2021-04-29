@@ -44,7 +44,7 @@ void SortArray(int *ChargingCurrentReadings, int numOfCCReadings)
 int NumberofContinuousRange( int *ChargingCurrentReadings, int numOfCCReadings)
 {
     int StartIndex=0;
-    _Bool IsStart=1;
+    bool IsStart=1;
     int Iscontinuous=1;
     SortArray(ChargingCurrentReadings, numOfCCReadings);
     for (int i=0; i<numOfCCReadings; i++)
