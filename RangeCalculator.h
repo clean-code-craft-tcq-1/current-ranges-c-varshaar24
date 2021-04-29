@@ -1,1 +1,1 @@
-int DetectContinuousRange( int *ChargingCurrentReadings, int numOfCCReadings);
+int NumberofContinuousRange( int *ChargingCurrentReadings, int numOfCCReadings);
