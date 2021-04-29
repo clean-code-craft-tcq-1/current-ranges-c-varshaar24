@@ -41,7 +41,7 @@ void SortArray(int *ChargingCurrentReadings, int numOfCCReadings)
     }
 }
 
-int DetectContinuousRange( int *ChargingCurrentReadings, int numOfCCReadings)
+int NumberofContinuousRange( int *ChargingCurrentReadings, int numOfCCReadings)
 {
     int StartIndex=0;
     _Bool IsStart=1;
