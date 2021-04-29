@@ -15,4 +15,4 @@ TEST_CASE("Case for detecting number of continuous range in the reading array gi
   TEST_CASE("Case for detecting number of continuous range in the reading array given") {
   int ChargingCurrentReadings[] = {3, 3, 5, 4};
   int numOfCCReadings = sizeof(ChargingCurrentReadings) / sizeof(ChargingCurrentReadings[0]);
-  REQUIRE(NumberofContinuousRange(ChargingCurrentReadings, numOfCCReadings) == 1);
+  REQUIRE(NumberofContinuousRange(ChargingCurrentReadings, numOfCCReadings) == 2);
